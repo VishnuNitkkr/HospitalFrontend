@@ -34,7 +34,7 @@ const AppointmentForm = () => {
   useEffect(() => {
     const fetchDoctors = async () => {
       const { data } = await axios.get(
-        "https://hospital-management-backend-6v1yozd41-jadhavmanoj2023s-projects.vercel.app/api/v1/user/doctors",
+        "https://hospital-backend-beige.vercel.app/api/v1/user/doctors",
         {
           withCredentials: true,
           headers: {
@@ -52,7 +52,7 @@ const AppointmentForm = () => {
     try {
       const hasVisitedBool = Boolean(hasVisited);
       const { data } = await axios.post(
-        "https://hospital-management-backend-6v1yozd41-jadhavmanoj2023s-projects.vercel.app/api/v1/appointment/post",
+        "https://hospital-backend-beige.vercel.app/api/v1/appointment/post",
         {
           firstName,
           lastName,
