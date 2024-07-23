@@ -39,8 +39,7 @@ const AppointmentForm = () => {
           withCredentials: true,
           headers: {
             "Content-Type": "application/json",
-            "Access-Control-Allow-Origin":'https://hospital-backend-beige.vercel.app',
-            "Access-Control-Allow-Methods":"GET,POST,PUT,DELETE"
+            
           },
         }
       );
