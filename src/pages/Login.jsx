@@ -20,7 +20,11 @@ const Login = () => {
         { email, password, confirmPassword, role: "Patient" },
         {
           withCredentials: true,
-          headers: { "Content-Type": "application/json" },
+          headers: { 
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin":'https://hospital-backend-beige.vercel.app',
+            "Access-Control-Allow-Methods":"GET,POST,PUT,DELETE"
+           },
         }
       );
       toast.success(response.data.message);
