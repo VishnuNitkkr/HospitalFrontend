@@ -14,13 +14,13 @@ const MessageForm = () => {
     try {
       await axios
         .post(
-          "https://hospital-backend-beige.vercel.app/api/v1/message/send",
+          "https://hospitalbackend-ykh8.onrender.com/api/v1/message/send",
           { firstName, lastName, email, phone, message },
           {
             withCredentials: true,
             headers: {
               "Content-Type": "application/json",
-              "Access-Control-Allow-Origin":'https://hospital-backend-beige.vercel.app',
+              "Access-Control-Allow-Origin":'https://hospitalbackend-ykh8.onrender.com',
               "Access-Control-Allow-Methods":"GET,POST,PUT,DELETE"
             },
           }

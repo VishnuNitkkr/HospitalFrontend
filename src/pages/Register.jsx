@@ -22,7 +22,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://hospital-backend-beige.vercel.app/api/v1/user/patient/register",
+        "https://hospitalbackend-ykh8.onrender.com/api/v1/user/patient/register",
         {
           firstName,
           lastName,
@@ -37,7 +37,7 @@ const Register = () => {
           withCredentials: true,
           headers: { 
             "Content-Type": "application/json",
-            "Access-Control-Allow-Origin":'https://hospital-backend-beige.vercel.app',
+            "Access-Control-Allow-Origin":'https://hospitalbackend-ykh8.onrender.com',
             "Access-Control-Allow-Methods":"GET,POST,PUT,DELETE"
           },
         }

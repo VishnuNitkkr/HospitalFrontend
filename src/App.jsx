@@ -20,12 +20,12 @@ const App = () => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          "https://hospital-backend-beige.vercel.app/api/v1/user/patient/me",
+          "https://hospitalbackend-ykh8.onrender.com/api/v1/user/patient/me",
           {
             withCredentials: true,
             headers: {
               "Content-Type": "application/json",
-              "Access-Control-Allow-Origin":'https://hospital-backend-beige.vercel.app',
+              "Access-Control-Allow-Origin":'https://hospitalbackend-ykh8.onrender.com',
               "Access-Control-Allow-Methods":"GET,POST,PUT,DELETE"
             },
           }
