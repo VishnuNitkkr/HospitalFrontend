@@ -11,6 +11,7 @@ const Navbar = () => {
   const navigateTo = useNavigate();
 
   const handleLogout = async () => {
+    setShow(!show)
     await axios
       .get(
         "https://hospitalbackend-ykh8.onrender.com/api/v1/user/patient/logout",
@@ -33,6 +34,7 @@ const Navbar = () => {
   };
 
   const gotoLogin = () => {
+    setShow(!show)
     navigateTo("/login");
   };
 
@@ -44,9 +46,9 @@ const Navbar = () => {
       </div>
       <div className={show ? "navLinks showmenu" : "navLinks"}>
         <div className="links">
-          <Link to={"/"}>HOME</Link>
-          <Link to={"/appointment"}>APPOINTMENTS</Link>
-          <Link to={"/about"}>ABOUT US</Link>
+          <Link to={"/"} onClick={() => setShow(!show)}>HOME</Link>
+          <Link to={"/appointment"} onClick={() => setShow(!show)}>APPOINTMENTS</Link>
+          <Link to={"/about"} onClick={() => setShow(!show)}>ABOUT US</Link>
         </div>
         {isAuthenticated ? (
           <button className="logoutBtn btn" onClick={handleLogout}>
