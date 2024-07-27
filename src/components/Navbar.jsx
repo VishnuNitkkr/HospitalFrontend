@@ -27,6 +27,7 @@ const Navbar = () => {
       .then((res) => {
         toast.success(res.data.message);
         setIsAuthenticated(false);
+        navigateTo('/login')
       })
       .catch((err) => {
         toast.error(err.response.data.message);
