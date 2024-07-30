@@ -64,7 +64,7 @@ const Navbar = () => {
             LOGIN
           </button>
         )}
-        <Link to="https://hospital-dashboard-taupe.vercel.app/">Admin Dashboard</Link>
+        <Link to="https://hospital-dashboard-taupe.vercel.app/" className="logoutBtn btn">Admin Dashboard</Link>
         </div>
       </div>
       <div className="hamburger" onClick={() => setShow(!show)}>
