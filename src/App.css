@@ -467,8 +467,7 @@ nav .navLinks .links a {
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 1.4px;
-  border: 2px solid rgb(28, 28, 28);
-  border-radius: 10px;
+  
 }
 nav .navLinks .links a:hover {
   color: #000;
