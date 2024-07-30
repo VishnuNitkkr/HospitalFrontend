@@ -32,6 +32,7 @@ const Register = () => {
           dateOfBirth,
           gender,
           phone,
+          role:"Patient"
         },
         {
           withCredentials: true,

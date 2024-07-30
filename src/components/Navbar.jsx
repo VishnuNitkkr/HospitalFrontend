@@ -40,6 +40,8 @@ const Navbar = () => {
     navigateTo("/login");
   };
 
+  
+
   return (
     <nav>
       <div className="logo">
@@ -52,6 +54,7 @@ const Navbar = () => {
           <Link to={"/appointment"} onClick={() => setShow(!show)}>APPOINTMENTS</Link>
           <Link to={"/about"} onClick={() => setShow(!show)}>ABOUT US</Link>
         </div>
+        <div>
         {isAuthenticated ? (
           <button className="logoutBtn btn" onClick={handleLogout}>
             LOGOUT
@@ -61,6 +64,8 @@ const Navbar = () => {
             LOGIN
           </button>
         )}
+        <Link to="https://hospital-dashboard-taupe.vercel.app/">Admin Dashboard</Link>
+        </div>
       </div>
       <div className="hamburger" onClick={() => setShow(!show)}>
         <GiHamburgerMenu />
