@@ -27,7 +27,7 @@ const Navbar = () => {
       .then((res) => {
         toast.success(res.data.message);
         setIsAuthenticated(false);
-        res.clearCookie("patientToken");
+        
         navigateTo('/login')
       })
       .catch((err) => {
